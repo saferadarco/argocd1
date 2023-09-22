@@ -10,5 +10,5 @@ spec:
         spec:
           containers:
           - name: mydotnetapp1
-            image: mydotnetapp1:latest
+            image: mahesagrimba/mydotnetapp1:latest
           restartPolicy: OnFailure
