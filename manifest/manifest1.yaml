@@ -3,12 +3,12 @@ kind: CronJob
 metadata:
   name: mydotnetapp1-cronjob
 spec:
-  schedule: "*/2 * * * *"  # Run every 2 minutes
+  schedule: "*/4 * * * *"  # Run every 4 minutes
   jobTemplate:
     spec:
       template:
         spec:
           containers:
-          - name: mydotnetapp1
+          - name: mahesagrimba/mydotnetapp1
             image: mahesagrimba/mydotnetapp1:latest
           restartPolicy: OnFailure
